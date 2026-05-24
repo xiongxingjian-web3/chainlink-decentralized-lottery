@@ -117,33 +117,8 @@ npm run dev
 
 ---
 
-## 6. 本次仓库清理策略（用于 push）
 
-已在根目录 `.gitignore` 统一配置以下忽略项：
-
-- 敏感信息：`.env`、`.env.*`（保留 `.env.example`）
-- 大体积依赖与构建产物：`node_modules`、`.next`、`out`、`cache`、`coverage` 等
-- Foundry 部署记录：`broadcast/`（可能含地址、交易信息）
-- 无需上传文档：`小白学习指南.md`、`AGENTS.md`、`CLAUDE.md`
-
----
-
-## 7. 首次推送到 GitHub（整项目）
-
-在根目录 `彩票项目` 执行：
-
-```bash
-git init
-git add .
-git commit -m "chore: initial commit for lottery project"
-git branch -M main
-git remote add origin <你的仓库地址>
-git push -u origin main
-```
-
----
-
-## 8. 安全提醒
+## 6. 安全提醒
 
 - 你当前本地 `.env` 里存在真实私钥与 API Key，虽然已被忽略，但**建议立即轮换**（尤其是私钥）。
 - 提交前建议执行：
